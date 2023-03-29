@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8080/eureka
+
+server:
+  port: 0
+
+jwt:
+  key:
+    public: 'MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxAC3++G5ZRaU1b2Isj4nNhVINlmEO/p1K6Bp7mvNJkdGf++gDVVB+J2g37/GlYUz43RCIhhcC06I1E/fyP2bjYQZv7sd08CNmScutZHxVfXTT8ewUFqCTft27Grrh4zsVmuW1Aj2lqG8r7SV/ZZOgn7GSJhji9v5dmqAgE0qKgJFRGWWDpfTI2rW5YLFkaBLgK1FhRdoK9ekSrjVfqLNRehHLr6XR/Q9K+o9WR9lk0wLQV9/k1D63WIXvEMTyqheG89Fp5IoLP2ZOg8RNb8Clj1F6D7lfCbNhbTB6JQ5UqkChGBEfJ2Lh7CoQ13dEgH7daJNPtErvZ0cJekYF39QSQIDAQAB'
+  expriration:
+    refresh:
+      days:
+    access:
+      minutes:

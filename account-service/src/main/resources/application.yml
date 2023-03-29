@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: account-service
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: postgres
+    url: jdbc:postgresql://localhost:5432/postgres
+
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8080/eureka
+#  instance:
+#    prefer-ip-address: true
+
+server:
+  port: 8082
+
+jwt:
+  key:
+    private: 'MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDEALf74bllFpTVvYiyPic2FUg2WYQ7+nUroGnua80mR0Z/76ANVUH4naDfv8aVhTPjdEIiGFwLTojUT9/I/ZuNhBm/ux3TwI2ZJy61kfFV9dNPx7BQWoJN+3bsauuHjOxWa5bUCPaWobyvtJX9lk6CfsZImGOL2/l2aoCATSoqAkVEZZYOl9MjatblgsWRoEuArUWFF2gr16RKuNV+os1F6EcuvpdH9D0r6j1ZH2WTTAtBX3+TUPrdYhe8QxPKqF4bz0Wnkigs/Zk6DxE1vwKWPUXoPuV8Js2FtMHolDlSqQKEYER8nYuHsKhDXd0SAft1ok0+0Su9nRwl6RgXf1BJAgMBAAECggEAEqWq21jXRYnHcSpOBf8pxdhyfVE45mfmm9bwHRG+e8TOLT/D72DMHPYKJx9cqj7498vIuuusXhsDo4dR2BJgqS8HMBmCNfIcxpRWukl/N1li2DU8Tfi+auLgpo9phwTeOz6TI+sSYrRSejjpCC4zm/CptqBg4B52dlCdlxdASqyv29jbnb4GvlH0EBoGwkgTKbtsEn0ffcGX+VnVVPYCtr/fVrbbOUQk4MuuQeVOrek5ij2vcUDWvn8z0ziM1/3pqbl/WE/6d5wFd704ahV9QcTu/QBvseHIFWcsOKWUXJAQqxMJG7BAKn83nOF7utgBdJW6oDzLafLpUu3J9AfwAQKBgQDzRT4IscXe7BZlQZa2fpCGKZi+unX/rK21xSyPOlEFh0rsZMSx2SHW9moqn/GZtKmsp6SoifTPWclpxgqLtF55Eli/pQhqTiCVTKbqQWKy8/xLK8kbs/1e6Cyb+CJ6TdeqEKaRkrHzjQcCfmd0U1DRwLNQ26E5PMM86X4vrmLqAQKBgQDOQkv+P7lsDUHepgMuOanYZjTuBC/CS/XW6lBCiftTBmboSy3rgSjx2f+40pIpL8+Y93UNsCDXKoBmla1CJGG5CX9ZJAdOyHdkbL3/0DElASHd9PBxSaQTSyhqRJ9cov+w7W9gHClFApzAKn8RZmLPmZ891g1EYnRSsv1zXC6WSQKBgG3w0xI21UfjxlNIiwY6uLIJRoCb4AwGTBMj4vlvz4ICHLgs6j+9828kueI9moBuh2gB84Y/oqW63C2zVLzCbRemVPl3ahAw8sTGeYDQv/xEC7clOKQOeelUYCS0xVAksdyn3b9YXpfFGm/kFHkb1iCVR/S47WnirhFvLJn747QBAoGAAKkxuSTXIUOBnIcHp5RDuQ/Kx6B3zrWTmhayHyR2C7QPjFsBUKnfSbcbHKqAEWW30pOoalzQHiBivPFp1rZrIb6oC88Tvurhhw7aJQGzxpyUUTPBuXs07WLmREDoCdHz48s++h3c+/2gJvV75sBfPK8PVZFkBX4TRViRe1cmRxECgYBE1FM91GqHQ7oNAw0ebX3adTb2py2ipa14mTOLsPJhzX51qosuBVeQogBk3Y5EtckYnpsE3iKborAc8yvT2NP2tNShWIoxuJtKBeunmipy4F/NS+z2XFWwzUc7Ys3qiLLtJHpQmZvnO7HzwIYCAigsai3GeyobakrRQDHwar6QXg=='
+    public: 'MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxAC3++G5ZRaU1b2Isj4nNhVINlmEO/p1K6Bp7mvNJkdGf++gDVVB+J2g37/GlYUz43RCIhhcC06I1E/fyP2bjYQZv7sd08CNmScutZHxVfXTT8ewUFqCTft27Grrh4zsVmuW1Aj2lqG8r7SV/ZZOgn7GSJhji9v5dmqAgE0qKgJFRGWWDpfTI2rW5YLFkaBLgK1FhRdoK9ekSrjVfqLNRehHLr6XR/Q9K+o9WR9lk0wLQV9/k1D63WIXvEMTyqheG89Fp5IoLP2ZOg8RNb8Clj1F6D7lfCbNhbTB6JQ5UqkChGBEfJ2Lh7CoQ13dEgH7daJNPtErvZ0cJekYF39QSQIDAQAB'
+  expiration:
+    refresh:
+      days: 30
+    access:
+      minutes: 10 #10 minutes

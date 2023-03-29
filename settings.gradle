@@ -1,0 +1,5 @@
+rootProject.name = 'online-shop'
+
+includeBuild 'gateway'
+includeBuild 'eureka-server'
+includeBuild 'account-service'
