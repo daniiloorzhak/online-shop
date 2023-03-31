@@ -11,14 +11,6 @@
         <module name="account-service.main" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="1.6">
-      <module name="api-gateway" target="17" />
-      <module name="frozen-acccount-service" target="17" />
-      <module name="frozen-acccount-service.main" target="17" />
-      <module name="frozen-acccount-service.test" target="17" />
-      <module name="frozen-account-service" target="17" />
-      <module name="ru.oorzhak.frozen-acccount-service.main" target="17" />
-      <module name="ru.oorzhak.frozen-acccount-service.test" target="17" />
-    </bytecodeTargetLevel>
+    <bytecodeTargetLevel target="1.6" />
   </component>
 </project>
